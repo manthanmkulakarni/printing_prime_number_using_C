@@ -10,22 +10,22 @@ scanf("%d%d",&a,&b);  //int a and b are the limits
 printf(" The prime numbers between %d and %d are \n",a,b);
 for(;a<b;a++)
 {
-  flag=0;
+  flag=1
   
   for(i=2;i<a;i++)
    {
 	if((a%i)!=0)
 	{
-	 flag=1; 	//indication that the number is not divisible by the given value of int 'i'
+	 flag=0 	//indication that the number is not divisible by the given value of int 'i'
 
 	}
 	else
  	{
-	 flag=0;	//exiting the loop as number is divisible by int 'i'
+	 flag=1	//exiting the loop as number is divisible by int 'i'
 	 break;
  	}
    }
-  if(flag==1)
+  if(flag==0)
   {
    printf("%d ,",a);
   }
